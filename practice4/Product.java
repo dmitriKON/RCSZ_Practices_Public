@@ -2,19 +2,19 @@ package practice4;
 
 public class Product {
     private Integer id;
-    private String prodName;
+    private String name;
     private double price;
     private String factoryName;
 
     public Product(Integer id, String prodName, double price, String factoryName) {
         this.id = id;
-        this.prodName = prodName;
+        this.name = prodName;
         this.price = price;
         this.factoryName = factoryName;
     }
 
-    public Product(String prodName, double price, String factoryName) {
-        this.prodName = prodName;
+    public Product(String name, double price, String factoryName) {
+        this.name = name;
         this.price = price;
         this.factoryName = factoryName;
     }
@@ -27,12 +27,12 @@ public class Product {
         this.id = id;
     }
 
-    public String getProdName() {
-        return prodName;
+    public String getName() {
+        return name;
     }
 
-    public void setProdName(String prodName) {
-        this.prodName = prodName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public double getPrice() {
@@ -55,7 +55,7 @@ public class Product {
     public String toString() {
         return "Product{" +
                 "id=" + id +
-                ", prodName='" + prodName + '\'' +
+                ", name='" + name + '\'' +
                 ", price=" + price +
                 ", factoryName='" + factoryName + '\'' +
                 '}';
